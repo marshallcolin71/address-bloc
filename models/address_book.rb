@@ -1,5 +1,6 @@
 require_relative 'entry'
-require_relative "csv"
+require "csv"
+
 class AddressBook
   attr_reader :entries
 
@@ -15,6 +16,8 @@ class AddressBook
         delete_entry = entry
       end
     end
+
+    # Fixthe bbbbbbbbbbbbbbbbbbbbroken test now
   end
 
   def add_entry(name, phone_number, email)
